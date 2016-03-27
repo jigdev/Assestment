@@ -1,0 +1,11 @@
+1. List out all items in table.
+
+2. Used Button Components instead of the Checkbox. It looks better than checkbox
+
+3. Validate the filds, with numbers and min,max limit.
+
+4. Food Items sorting.
+
+5. Provide the details of Subtotal and Tax
+
+Thank You
