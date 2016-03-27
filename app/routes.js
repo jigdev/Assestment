@@ -23,7 +23,7 @@ module.exports = function (app) {
     });
 
     // create food and send back all food after creation
-    app.post('/api/food', function (req, res) {debugger;
+    app.post('/api/food', function (req, res) {
 
         // create a food, information comes from AJAX request from Angular
         Food.create({
@@ -52,7 +52,7 @@ module.exports = function (app) {
         });
     });
   // Get Total of All Food Items
-    app.get('/api/getTotal', function(req, res){
+    app.get('/api/total', function(req, res){
         Food.find(function (err, food) {
 
         // if there is an error retrieving, send the error. nothing after res.send(err) will execute

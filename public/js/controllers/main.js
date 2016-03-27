@@ -17,7 +17,7 @@ angular.module('foodController', [])
 		// use the service to get all the food
 		Food.get()
 			.success(function(data) {
-				debugger
+				
 				if(data.length > 0){
 					$scope.formDatas = data;
 				/*$scope.formData.foodPrice = data.foodPrice;
@@ -29,8 +29,8 @@ angular.module('foodController', [])
 
 		//Get total of all food items
 		$scope.getTotal = function() {
-			$http.get("/api/getTotal", {}).then(function(totalData){
-				debugger
+			$http.get("/api/total", {}).then(function(totalData){
+				
 				$scope.total = totalData.data;
 			});
 		}	
